@@ -1,0 +1,56 @@
+body{
+    background-color: #4F709C;
+    color: #D8C4B6;
+    font-family: 'Monomaniac One', sans-serif;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    word-spacing: 25px;
+}
+#container{
+    max-width: 490px;
+    margin: auto;
+    padding: 20px 0px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 50px;
+}
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    border: 10px solid black;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.blue{
+    background-color: blue;
+}
+.hide-box{
+    background-color: #4F709C;
+    border: none;
+}
+@media(max-width:1100px){
+    .row{
+        grid-template-columns: 1fr;
+    }
+    .box{
+        margin: auto;
+    }
+}
